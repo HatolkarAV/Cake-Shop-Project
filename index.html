@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="cakeshop.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rich Cakes</title>
+</head>
+
+<body>
+  <div class="slideshow-container">
+    <div class="container">
+      <nav>
+        <ul class="container2">
+          <li class="nav-header">Rich <img src="logo.png" alt="My_Post"> Cakes</li>
+          <li class="A"><a href="#">Home</a></li>
+          <li class="B"><a href="#">About</a></li>
+          <li class="C"><a href="#">Contact Us</a></li>
+          <li class="D"><a href="#">Features</a></li>
+          <li class="E"><a href="#">Blog</a></li>
+          <li><button>Order Online</button></li>
+          <li class="F"><a href="#">&#x02261;</a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+    <div class="mySlides fade">
+      <img class="mainimg" src="slider-2.jpg" style="width:100%">
+      <div class="text">Every flavor has a different story</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img class="mainimg2" src="slider-3.jpg" style="width:100%">
+      <div class="text">Every flavor has a different story</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img class="mainimg3" src="slider-1.jpg" style="width:100%">
+      <div class="text">Every flavor has a different story</div>
+    </div>
+
+
+  </div>
+
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 5000); // Change image every 2 seconds
+    }
+  </script>
+
+
+  <br>
+
+  <div style="text-align:center">
+  </div>
+
+  <h2>Our Menu</h2>
+  <img class="imgs" src="section-seprator.png">
+  <div class="maincontainer">
+    <div class="container4">
+      <div class="container3">
+        <div class="card">
+          <img class="ccake" src="menu-1.png" alt="chocolateCake">
+          <div class="content">
+            <h3>Chocolate<span>20.00$</span></h3>
+            <button class="ordernow">Order Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container3">
+        <div class="card">
+          <img class="ccake" src="menu-3 (1).png" alt="chocolateCake">
+          <div class="content">
+            <h3>Velvet<span>25.00$</span></h3>
+            <button class="ordernow">Order Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container5">
+      <div class="container6">
+        <div class="card">
+          <img class="ccake3" src="menu-2.png" alt="chocolateCake">
+          <div class="content">
+            <h3>Flowered<span>32.00$</span></h3>
+            <button class="ordernow">Order Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container6">
+        <div class="card">
+          <img class="ccake4" src="menu-4.png" alt="chocolateCake">
+          <div class="content">
+            <h3>Rose<span>38.00$</span></h3>
+            <button class="ordernow">Order Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container5">
+      <div class="container6">
+        <div class="card">
+          <img class="ccake5" src="menu-5.png" alt="chocolateCake">
+          <div class="content">
+            <h3>Berry<span>48.00$</span></h3>
+            <button class="ordernow">Order Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container6">
+        <div class="card">
+          <img class="ccake6" src="menu-6.png" alt="chocolateCake">
+          <div class="content">
+            <h3>Strawberry<span>54.00$</span></h3>
+            <button class="ordernow">Order Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mcontainer">
+    <h3 class="mheader">Choose Your Flavor</h3>
+    <img class="mseprator" src="section-seprator.png" alt="section-seprator">
+    <div class="formcontainer">
+      <span>Order Online</span>
+      <div class="formcontainer1">
+        <input type="text" id="name" placeholder="Name">
+        <input type="number" id="phone" placeholder="Phone Number">
+      </div>
+      <div class="formcontainer2">
+        <input type="text" id="ftext" placeholder="Flavor">
+        <input type="text" id="address" placeholder="Your Address">
+      </div>
+      <button class="mbutton">Order Now</button>
+    </div>
+    <img class="orderonline" src="order-online.png" alt="order-online">
+  </div>
+
+
+  <footer>
+    <div class="fcontainer">
+      <div class="f1container">
+        <h3 class="fheader">Contact us today</h3>
+        <p class="fcontent">Room No.181 , Hostel No.2, <br>
+          <span>GCOE,Jalgaon.</span>
+        </p>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
